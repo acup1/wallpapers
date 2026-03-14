@@ -1,0 +1,30 @@
+name: Update README
+
+on: [push]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Generate image list
+      run: |
+        echo "" > README.md
+        echo "" >> README.md
+        find . -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.gif" -o -iname "*.svg" \) -not -path "./.git/*" | sort | while read img; do
+          img_path=${img#./}
+          echo "![]($img_path)" >> README.md
+          echo "" >> README.md
+        done
+        
+    - name: Commit
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add README.md
+        git diff --quiet && git diff --staged --quiet || git commit -m "Update README"
+        git push
