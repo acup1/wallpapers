@@ -54,11 +54,11 @@
 - [vetki_girlianda_el_118627_1920x1080.jpg](vetki_girlianda_el_118627_1920x1080.jpg)
 ![](vetki_girlianda_el_118627_1920x1080.jpg)
 
-- [wallpaper_amw (2).jpg]('wallpaper_amw (2).jpg')
-![]('wallpaper_amw (2).jpg')
+- [wallpaper_amw (2).jpg](wallpaper_amw (2).jpg)
+![](wallpaper_amw (2).jpg)
 
-- [wallpaper_amw (3).jpg]('wallpaper_amw (3).jpg')
-![]('wallpaper_amw (3).jpg')
+- [wallpaper_amw (3).jpg](wallpaper_amw (3).jpg)
+![](wallpaper_amw (3).jpg)
 
 - [wallpaperflare.com_wallpaper.jpg](wallpaperflare.com_wallpaper.jpg)
 ![](wallpaperflare.com_wallpaper.jpg)
