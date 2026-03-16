@@ -16,7 +16,7 @@ jobs:
         echo "" > README.md
         echo "" >> README.md
         find . -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.gif" -o -iname "*.svg" \) -not -path "./.git/*" | sort | while read img; do
-          img_path=${img#./}
+          img_path=${echo ${img#./} | sed 's/ /%20/g'}
           echo "- [$img_path]($img_path)" >> README.md
           echo "![]($img_path)" >> README.md
           echo "" >> README.md
